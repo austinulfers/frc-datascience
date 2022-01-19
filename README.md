@@ -18,4 +18,10 @@ Convert your api-key to a base64 token:
 - `python src/base64_encode.py --string "API_KEY"`
 
 Add your token to a newly created src/secrets.py file.
-- `AUTH_TOKEN = "API_TOKEN"`
+- `FIRST_AUTH_TOKEN = "API_TOKEN"`
+
+Get your The Blue Alliance authetication key:
+- https://www.thebluealliance.com/account
+
+Add your key to the src/secrets.py file:
+- `TBA_AUTH_KEY = "API_KEY"`

@@ -1,6 +1,6 @@
 import requests
 import pandas as pd
-from secrets import AUTH_TOKEN
+from secrets import FIRST_AUTH_TOKEN, TBA_AUTH_KEY
 
 
 def get_event_schedule(
