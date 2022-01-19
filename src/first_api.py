@@ -1,6 +1,6 @@
 import requests
 import pandas as pd
-from secrets import FIRST_AUTH_TOKEN, TBA_AUTH_KEY
+from secrets import FIRST_AUTH_TOKEN
 
 
 def get_event_schedule(
@@ -33,7 +33,7 @@ def get_event_schedule(
         "end": end
     }
     headers = {
-        "Authorization": f"Basic {AUTH_TOKEN}"
+        "Authorization": f"Basic {FIRST_AUTH_TOKEN}"
     }
     return requests.get(url, params=params, headers=headers).json()
 
@@ -67,7 +67,7 @@ def get_match_scores(
         "end": end
     }
     headers = {
-        "Authorization": f"Basic {AUTH_TOKEN}"
+        "Authorization": f"Basic {FIRST_AUTH_TOKEN}"
     }
     # Call the api and return the response as a dict
     return requests.get(url, params=params, headers=headers).json()
